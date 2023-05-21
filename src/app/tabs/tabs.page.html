@@ -1,3 +1,4 @@
+
 <ion-tabs *ngIf="!isDesktop">
 
   <ion-tab-bar slot="bottom">
@@ -20,6 +21,7 @@
 </ion-tabs>
 
 <div *ngIf="isDesktop" class="desktop">
+  <ion-router-outlet class="desktop-wrapper"></ion-router-outlet>
   <ion-header mode="ios">
     <ion-toolbar>
       <ion-row class="ion-align-items-center">
@@ -28,13 +30,13 @@
         </ion-col>
         <ion-col size="10">
           <div class="navbar" class="ion-text-center">
-            <ion-button fill="clear" href="/tabs/tab1" routerDirection="root" routerLinkActive="active/link" class="link">
+            <ion-button fill="clear" [routerLink]="['/tabs/tab1']" routerDirection="root" routerLinkActive="active-link" class="link">
               Home
             </ion-button>
-            <ion-button fill="clear" href="/tabs/tab2" routerDirection="root" routerLinkActive="active/link" class="link">
+            <ion-button fill="clear" [routerLink]="['/tabs/tab2']" routerDirection="root" routerLinkActive="active-link" class="link">
               About
             </ion-button>
-            <ion-button fill="clear" href="/tabs/tab3" routerDirection="root" routerLinkActive="active/link" class="link">
+            <ion-button fill="clear" [routerLink]="['/tabs/tab3']" routerDirection="root" routerLinkActive="active-link" class="link">
               Contact
             </ion-button>
           </div>
@@ -43,9 +45,8 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-router-outlet class="desktop-wrapper"></ion-router-outlet>
-
   <div class="footer">
     <span>MMWeber</span>
   </div>
 </div>
+
