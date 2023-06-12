@@ -8,6 +8,7 @@ import { ScreensizeService } from '../services/screensize.service';
 })
 export class TabsPage {
   isDesktop: boolean = false;
+  mmweberlogo: string ='assets/mmweber-logo.svg';
 
   constructor(private screensizeService: ScreensizeService) {
     this.screensizeService.isDesktopView().subscribe(isDesktop => {
