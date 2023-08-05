@@ -36,3 +36,34 @@
         }
     }
 }
+
+@font-face {
+    font-family: 'Gwen';
+    src: url('./assets/fonts/Gwen-Regular.woff2') format('woff2'), 
+    url('./assets/fonts/Gwen-Regular.woff') format('woff') 
+    ;
+}
+
+$font-family-ios-base: 'Gwen';
+$font-family-md-base: 'Gwen';
+$font-family-wp-base: 'Gwen';
+
+ion-title {
+    font-family: 'Gwen';
+}
+
+ion-card-title {
+    font-family: 'Gwen';
+}
+
+ion-card-subtitle {
+    font-family: 'Gwen';
+}
+
+ion-card-content {
+    font-family: 'Gwen';
+}
+
+ion-button {
+    font-family: 'Gwen';
+}

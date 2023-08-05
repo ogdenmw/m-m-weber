@@ -1,7 +1,7 @@
 .desktop {
     ion-router-outlet {
         margin-top: 66px;
-        margin-bottom: 56px;
+        margin-bottom: 36px;
     }
 
     .logo {
@@ -12,24 +12,33 @@
         --background: #000;
     }
 
-    .link {
-        --color: #fff;
-    }
 
     .active-link {
         --color: #fff;
+        font-family: 'Gwen';
     }
 
     .footer {
         width: 100%;
         color: #fff;
+        font-family: 'Gwen';
         font-weight: bold;
-        background: #374168;
-        height: 56px;
-        line-height: 56px;
+        background: #000;
+        height: 36px;
+        line-height: 36px;
         text-align: center;
         position: fixed;
         bottom: 0px;
     }
 
+}
+
+.link {
+    --color: #fff;
+    font-family: 'Gwen';
+}
+
+.header-bar{
+    height: 6;
+    line-height: 6;
 }
