@@ -25,7 +25,8 @@
           <ion-label class="my-ion-item">CONTACT</ion-label>
         </ion-item>
       </ion-menu-toggle>
-    </ion-list>  </ion-content>
+    </ion-list>
+  </ion-content>
 </ion-menu>
 <div class="ion-page" id="main-content">
   <ion-header>
@@ -33,18 +34,22 @@
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
-      <ion-title>        
-        <img src="./assets/mmweber-logo-white-transparent.png" class="logo ion-text-left" width="93px" height="50px">
-        <ion-button fill="clear" color="primary">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </ion-button>
-        <ion-button fill="clear" color="primary">
-          <ion-icon name="logo-facebook"></ion-icon>
-        </ion-button>
-        <ion-button fill="clear" color="primary">
-          <ion-icon name="logo-tiktok"></ion-icon>
-        </ion-button>
+      <ion-title>
+<!--        <img src="./assets/mmweber-logo-white-transparent.png" width="93px" height="50px">
+  -->
+  M.M.Weber
       </ion-title>
+        <ion-buttons slot="end">
+          <ion-button fill="clear" color="primary">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </ion-button>
+          <ion-button fill="clear" color="primary">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </ion-button>
+          <ion-button fill="clear" color="primary">
+            <ion-icon name="logo-tiktok"></ion-icon>
+          </ion-button>
+        </ion-buttons>
     </ion-toolbar>
   </ion-header>
   
@@ -79,12 +84,13 @@
   <ion-router-outlet class="desktop-wrapper"></ion-router-outlet>
   <ion-header mode="ios">
     <ion-toolbar>
-      <ion-row class="ion-align-items-center">
-        <ion-col size="2">
+      <ion-row class="ion-nowrap">
+        <ion-col size="auto">
           <img src="./assets/mmweber-logo-white-transparent.png" class="logo ion-text-left">
         </ion-col>
-        <ion-col size="8">
-          <div class="navbar" class="ion-text-center">
+        <ion-col></ion-col>
+        <ion-col size="auto">
+          <div class="navbar" class="ion-text-center"> <!-- TODO: I do not think there should be 2 class attributes here-->
             <ion-button fill="clear" [routerLink]="['/tabs/tab1']" routerDirection="root" routerLinkActive="active-link" class="link">
               Home
             </ion-button>
@@ -99,16 +105,17 @@
             </ion-button>
           </div>
         </ion-col>
-        <ion-col size="2">
-          <div class="navbar" class="ion-text-center">
+        <ion-col></ion-col>
+        <ion-col size="auto">
+          <div class="navbar" class="ion-text-right">
             <ion-button fill="clear" color="primary">
-              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-instagram" aria-label="Instagram" size="small"></ion-icon>
             </ion-button>
             <ion-button fill="clear" color="primary">
-              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-facebook" aria-label="Facebook" size="small"></ion-icon>
             </ion-button>
             <ion-button fill="clear" color="primary">
-              <ion-icon name="logo-tiktok"></ion-icon>
+              <ion-icon name="logo-tiktok" aria-label="TikTok" size="small"></ion-icon>
             </ion-button>
           </div>
         </ion-col>

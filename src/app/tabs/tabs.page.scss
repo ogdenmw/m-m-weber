@@ -12,6 +12,9 @@
         --background: var(--ion-background-color, #000);
     }
 
+    navbar {
+        --background: #fff;
+    }
 
     .active-link {
         --color: var(--ion-text-color, #000);

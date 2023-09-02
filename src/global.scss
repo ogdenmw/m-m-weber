@@ -50,6 +50,9 @@ $font-family-wp-base: 'Gwen';
 
 ion-title {
     font-family: 'Gwen';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 ion-card-title {
