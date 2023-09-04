@@ -2,7 +2,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 90vmin;
     z-index: 1;
     // top: -60px;
 }
@@ -11,9 +11,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 90vmin;
     position: relative;
-    top: -90vh;
+    top: -90vmin;
     z-index: 2;
 }
 
@@ -21,9 +21,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 90vmin;
     position: relative;
-    top: -180vh;
+    top: -180vmin;
     z-index: 3;
 }
 
@@ -32,6 +32,6 @@
     background-color: var(--ion-background-color, #000);;
     width: 100%;
     position: relative;
-    top: -180vh;
+    top: -180vmin;
     z-index: 4;
 }
