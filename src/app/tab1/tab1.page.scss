@@ -8,13 +8,16 @@
 }
 
 .parallax-image-middle {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 90vmin;
     position: relative;
     top: -90vmin;
     z-index: 2;
+    font-family: 'Gwen';
+    font-weight: bold;
+    font-size: 9vmin;
+    text-align: center;
+    line-height: 70vmin;
+    letter-spacing: 3vmin;
 }
 
 .parallax-image-bottom {
