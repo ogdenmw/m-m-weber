@@ -70,3 +70,32 @@ ion-card-content {
 ion-button {
     font-family: 'Gwen';
 }
+
+.loaderClass {
+    font-family: 'Gwen';
+    --height: 90vmin;
+    --min-width: 90vmin;
+    --background:#000;
+    --spinner-color:#121212;
+}
+
+.footer {
+    width: 100%;
+    color: var(--ion-text-color, #ffc409);
+    font-family: 'Gwen';
+    font-weight: bold;
+    font-size: small;
+    background: #000;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    // position: fixed;
+    bottom: 0px;
+}
+
+.footerText {
+    color: var(--ion-text-color, #ffc409);
+    font-family: 'Gwen';
+    font-weight: light;
+    font-size: small;
+}
