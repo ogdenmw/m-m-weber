@@ -1,0 +1,12 @@
+.parallax-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.main {
+    background-color: var(--ion-background-color, #000);;
+    width: 100%;
+    position: absolute;
+}

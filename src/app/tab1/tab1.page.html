@@ -1,21 +1,43 @@
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" [scrollEvents]="true" (ionScroll)="handleScroll($any($event))">
+
+  <div id="topImage" class="parallax-image" [ngStyle]="{backgroundImage:'url(../../assets/bgimage.png)'}" alt="MMWeber background image">    
+  </div>
+
+  <div class="main">
+
   <ion-card>
-    <img alt="Die Physik des Todes" src="./assets/physik des todes poster narrow.png" />
-    <ion-card-header>
-      <ion-card-title>Die Physik des Todes</ion-card-title>
-      <ion-card-subtitle>Eine Vampirgeschichte</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
-    </ion-card-content>
+    <!--    <img alt="Die Physik des Todes" src="./assets/physik des todes poster narrow.png" /> -->
+        <ion-card-header>
+          <ion-card-title>Die Physik des Todes</ion-card-title>
+          <ion-card-subtitle>Eine Vampirgeschichte</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          COMING SOON!
+        </ion-card-content>
+    
+        <ion-card-header>
+          <ion-card-title>Die Physik des Todes</ion-card-title>
+          <ion-card-subtitle>Eine Vampirgeschichte</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          COMING SOON!
+        </ion-card-content>
 
-    <ion-button fill="clear">More</ion-button>
-    <ion-button fill="clear">Kindle Store</ion-button>
+        <ion-card-header>
+          <ion-card-title>Die Physik des Todes</ion-card-title>
+          <ion-card-subtitle>Eine Vampirgeschichte</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          COMING SOON!
+        </ion-card-content>
+        <!--    <ion-button fill="clear">More</ion-button>
+        <ion-button fill="clear">Kindle Store</ion-button>
+    -->
   </ion-card>
-
-
 
 <!--
     <ion-header collapse="condense">
@@ -27,7 +49,10 @@
   <app-explore-container name="Home page"></app-explore-container>
 -->
 
-<div class="footer">
-  <span>MMWeber</span>
+  <div class="footer">
+    <span>MMWeber</span>
+  </div>
 </div>
+
 </ion-content>
+  

@@ -6,6 +6,7 @@ import { RouterLinkWithHref } from '@angular/router';
 import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
+import { SharedDirectivesModule } from '../directives/shared-directives.module';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { TabsPage } from './tabs.page';
     CommonModule,
     FormsModule,
     TabsPageRoutingModule, 
-    RouterLinkWithHref
+    RouterLinkWithHref,
+    SharedDirectivesModule
   ],
   declarations: [TabsPage]
 })
