@@ -53,22 +53,27 @@ ion-title {
     display: flex;
     flex-direction: row;
     align-items: center;
+    letter-spacing: .25vmin;
 }
 
 ion-card-title {
     font-family: 'Gwen';
+    letter-spacing: .25vmin;
 }
 
 ion-card-subtitle {
     font-family: 'Gwen';
+    letter-spacing: .25vmin;
 }
 
 ion-card-content {
     font-family: 'Gwen';
+    letter-spacing: .25vmin;
 }
 
 ion-button {
     font-family: 'Gwen';
+    letter-spacing: .25vmin;
 }
 
 .loaderClass {
@@ -77,6 +82,7 @@ ion-button {
     --min-width: 90vmin;
     --background:#000;
     --spinner-color:#121212;
+    letter-spacing: .25vmin;
 }
 
 .footer {
@@ -91,6 +97,7 @@ ion-button {
     text-align: center;
     // position: fixed;
     bottom: 0px;
+    letter-spacing: .25vmin;
 }
 
 .footerText {
@@ -98,4 +105,5 @@ ion-button {
     font-family: 'Gwen';
     font-weight: light;
     font-size: small;
+    letter-spacing: .25vmin;
 }
