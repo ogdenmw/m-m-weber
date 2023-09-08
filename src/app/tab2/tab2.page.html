@@ -1,21 +1,79 @@
-<ion-header [translucent]="true">
+<!--<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title class="header-bar">
-      About
+      Shop
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">About</ion-title>
+      <ion-title size="large">Shop</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <app-explore-container name="About page"></app-explore-container>
 
+  <div class="main">
+    <ion-card>
+      <img alt="Die Physik des Todes" src="./assets/physik des todes poster narrow.png" />
+      <!-- @Mike: This image should be a bit smaller. -->
+          <ion-card-header>
+            <ion-card-title>Die Physik des Todes</ion-card-title>
+            <ion-card-subtitle>Urban Fantasy</ion-card-subtitle>
+            <ion-button fill="clear">Autorenwelt</ion-button>
+            <ion-button fill="clear">Tolino</ion-button>
+            <ion-button fill="clear">Amazon</ion-button>
+          </ion-card-header>
+        
+          <ion-card-content>
+            Die Tübinger Physik-Studentin Sonja will genauso erfolgreich und selbstsicher werden wie ihre Professorin Yolanda. 
+            Nach einer durchzechten Nacht in einem Verbindungshaus wacht sie als Vampir wieder auf und bemerkt schnell, dass dieser 
+            Zustand nicht nur Vorteile hat. Sie setzt ihre analytische Denkweise ein, um zu verstehen, wie die Magie funktioniert, 
+            von der sie nun unweigerlich ein Teil geworden ist. Dabei stellt sie fest, dass auch Yolanda mit Magie experimentiert und 
+            das nicht gerade zum Vorteil der Studenten am Campus Morgenstelle. 
+          </ion-card-content>    
+
+          <ion-button fill="clear">zur Leseprobe</ion-button>
+          <ion-button fill="clear">Rezensionen</ion-button>
+          <ion-button fill="clear">Waschzettel</ion-button>
+          <ion-button fill="clear">Triggerwarnungen</ion-button>
+
+          <!-- @Mike: Here needs to be a way to embed a PDF file with the first pages of the novel for people to read. 
+            There should be the buttons above that lead to sub-tabs with the info on them. Rezensionen should be a link 
+            to somebodys blog, Triggerwarnungen should go to a place on my own website, Waschzettel should also be an embedded PDF.
+            if you want to good example, check this out: https://april-wynter.de/buecher/ 
+            is it possible to have the text next to the book in computer mode, too? Her content is next to the cover in computer mode 
+            and below it in mobile mode. -->
+    </ion-card>
+
+  </div>
+
   <div class="footer">
-    <span>MMWeber</span>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button fill="clear" class="link" size="small">
+          Impressum
+        </ion-button>
+        <ion-button fill="clear" class="link" size="small">
+          Datenschutz
+        </ion-button>
+      </ion-buttons>
+      <ion-title class="link">
+        © Michelle Weber 2023
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-button fill="clear" class="link" size="small">
+          <ion-icon name="logo-instagram" aria-label="Instagram" size="small"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" class="link" size="small">
+          <ion-icon name="logo-facebook" aria-label="Facebook" size="small"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" class="link" size="small">
+          <ion-icon name="logo-tiktok" aria-label="TikTok" size="small"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>    
   </div>
   </ion-content>
