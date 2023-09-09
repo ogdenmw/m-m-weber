@@ -58,17 +58,23 @@ ion-title {
 
 ion-card-title {
     font-family: 'Gwen';
+    font-size: 300%;
     letter-spacing: .25vmin;
+    align-self: center;
 }
 
 ion-card-subtitle {
     font-family: 'Gwen';
+    font-size: 200%;
     letter-spacing: .25vmin;
+    align-self: center;
 }
 
 ion-card-content {
     font-family: 'Book Antiqua';
-    letter-spacing: .1vmin;
+    font-size: 500%
+    letter-spacing .25vmin;
+    align-self: center;
 }
 
 ion-button {
