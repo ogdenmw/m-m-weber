@@ -70,10 +70,16 @@ ion-card-subtitle {
     align-self: center;
 }
 
-ion-card-content {
-    font-family: 'Book Antiqua';
-    font-size: 500%
-    letter-spacing .25vmin;
+.card-img {
+    width:50%;
+    display:block;
+    margin: 0 auto;
+}
+
+.card-content {
+    font-family: 'Gwen';
+    font-size: 200%;
+    letter-spacing: .25vmin;
     align-self: center;
 }
 
