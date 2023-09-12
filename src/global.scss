@@ -28,6 +28,7 @@
 .desktop-wrapper {
     ion-toolbar {
         text-align: center;
+        background-color: #000;
     }
 
     ion-header {
@@ -70,6 +71,7 @@ ion-card-subtitle {
     align-self: center;
 }
 
+<<<<<<< Updated upstream
 .card-img {
     width:50%;
     display:block;
@@ -80,6 +82,12 @@ ion-card-subtitle {
     font-family: 'Gwen';
     font-size: 200%;
     letter-spacing: .25vmin;
+=======
+ion-card-content {
+    font-family: 'Book Antiqua';
+    font-size: 0%
+    letter-spacing .25vmin;
+>>>>>>> Stashed changes
     align-self: center;
 }
 
