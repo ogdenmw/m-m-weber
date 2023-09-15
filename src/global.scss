@@ -72,9 +72,15 @@ ion-card-subtitle {
 
 .card-img {
     width:50%;
-    display:block;
+    display: inline-block;
     margin: 0 auto;
-}
+ }
+
+.ion-card-header { 
+    width:50%;
+    display: inline-block;
+    margin: 0 auto;
+ }
 
 .card-content {
     font-family: 'Gwen';
