@@ -1,5 +1,5 @@
 
-<ion-menu contentId="main-content" *ngIf="!isDesktop">
+<ion-menu contentId="main-content" *ngIf="!isDesktop && false"> <!-- temporary turn off menu -->
   <ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
@@ -89,7 +89,7 @@
           <img src="./assets/mmweber-logo-white-transparent.png" class="logo ion-text-left">
         </ion-col>
         <ion-col></ion-col>
-        <ion-col size="auto">
+        <ion-col size="auto" *ngIf="false"> <!-- temporary remove menu -->
           <div class="navbar" class="ion-text-center"> <!-- TODO: I do not think there should be 2 class attributes here-->
             <ion-button fill="clear" [routerLink]="['/tabs/tab1']" routerDirection="root" routerLinkActive="active-link" class="link">
               Home
