@@ -8,6 +8,7 @@ import { LoadingController } from '@ionic/angular';
   templateUrl: 'tabs.page.html',
   styleUrls: ['tabs.page.scss']
 })
+
 export class TabsPage {
   isDesktop: boolean = false;
   mmweberlogo: string ='assets/mmweber-logo.svg';
