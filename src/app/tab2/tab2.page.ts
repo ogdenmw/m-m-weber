@@ -10,7 +10,7 @@ import { LoadingController } from '@ionic/angular';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-
+  
   isDesktop: boolean = false;
 
   constructor(private screensizeService: ScreensizeService, public loadingController: LoadingController) {

@@ -15,14 +15,17 @@
 
   <app-explore-container name="Contact page"></app-explore-container>
 
-  <ion-card>
-    <ion-img alt="Michelle Margit Weber" src="./assets/Bilder von mir/Michelle_Weber_0107400 1.jpg" class="card-img"/>
-        <ion-card-header>
+  <ion-card  class="card-center">
+    <ion-img alt="Michelle Margit Weber" src="./assets/Bilder von mir/Michelle_Weber_0107400 1.jpg" [ngClass]="isDesktop?'card-img':''"/>
+        <ion-card-header [ngClass]="isDesktop?'ion-card-header':''">
           <ion-card-title>Das bin ich</ion-card-title>
           <!-- <ion-card-subtitle>Eine Vampirgeschichte</ion-card-subtitle> -->
+          <ion-card-content class="card-content" *ngIf="isDesktop">
+            Hier etwas zu mir schreiben
+          </ion-card-content>  
         </ion-card-header>
       
-        <ion-card-content class="card-content">
+        <ion-card-content class="card-content" *ngIf="!isDesktop">
           Hier etwas zu mir schreiben
         </ion-card-content>  
   </ion-card>

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ScreensizeService } from '../services/screensize.service';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab4',
@@ -6,7 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['tab4.page.scss']
 })
 export class Tab4Page {
+  isDesktop: boolean = false;
 
-  constructor() {}
+  constructor(private screensizeService: ScreensizeService, public loadingController: LoadingController) {
+    this.screensizeService.isDesktopView().subscribe(isDesktop => {
+      console.log('is desktop changed: ', isDesktop);
+      this.isDesktop = isDesktop;
+    })    
+  }
 
 }
