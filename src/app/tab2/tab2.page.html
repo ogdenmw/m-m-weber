@@ -31,7 +31,11 @@
               von der sie nun unweigerlich ein Teil geworden ist. Dabei stellt sie fest, dass auch Yolanda mit Magie experimentiert und 
               das nicht gerade zum Vorteil der Studenten am Campus Morgenstelle. 
             </ion-card-content>    
-            </ion-card-header>
+            <ion-button fill="clear" *ngIf="isDesktop">zur Leseprobe</ion-button>
+            <ion-button fill="clear" *ngIf="isDesktop">Rezensionen</ion-button>
+            <ion-button fill="clear" *ngIf="isDesktop">Waschzettel</ion-button>
+            <ion-button fill="clear" *ngIf="isDesktop">Triggerwarnungen</ion-button>
+              </ion-card-header>
         
           <ion-card-content class="card-content" *ngIf="!isDesktop">
             Die Tübinger Physik-Studentin Sonja will genauso erfolgreich und selbstsicher werden wie ihre Professorin Yolanda. 
@@ -41,10 +45,10 @@
             das nicht gerade zum Vorteil der Studenten am Campus Morgenstelle. 
           </ion-card-content>    
 
-          <ion-button fill="clear">zur Leseprobe</ion-button>
-          <ion-button fill="clear">Rezensionen</ion-button>
-          <ion-button fill="clear">Waschzettel</ion-button>
-          <ion-button fill="clear">Triggerwarnungen</ion-button>
+          <ion-button fill="clear" *ngIf="!isDesktop">zur Leseprobe</ion-button>
+          <ion-button fill="clear" *ngIf="!isDesktop">Rezensionen</ion-button>
+          <ion-button fill="clear" *ngIf="!isDesktop">Waschzettel</ion-button>
+          <ion-button fill="clear" *ngIf="!isDesktop">Triggerwarnungen</ion-button>
 
           <!-- @Mike: Here needs to be a way to embed a PDF file with the first pages of the novel for people to read. 
             There should be the buttons above that lead to sub-tabs with the info on them. Rezensionen should be a link 
