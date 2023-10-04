@@ -29,15 +29,13 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
-        pathMatch: 'full'
+        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
-    pathMatch: 'full'
+    loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
   }
 ];
 
