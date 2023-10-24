@@ -28,6 +28,10 @@ const routes: Routes = [
         loadChildren: () => import('../impressum/impressum.module').then(m => m.ImpressumPageModule)
       },
       {
+        path: 'datenschutz',
+        loadChildren: () => import('../datenschutz/datenschutz.module').then(m => m.DatenschutzPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
