@@ -28,6 +28,10 @@ const routes: Routes = [
         loadChildren: () => import('../impressum/impressum.module').then(m => m.ImpressumPageModule)
       },
       {
+        path: 'datenschutz',
+        loadChildren: () => import('../datenschutz/datenschutz.module').then(m => m.DatenschutzPageModule)
+      },
+      {
         path: '',
         loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
       }

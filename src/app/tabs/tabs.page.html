@@ -1,5 +1,5 @@
 
-<ion-menu contentId="main-content" *ngIf="!isDesktop">
+<ion-menu contentId="main-content" *ngIf="!isDesktop && false"> <!-- temporary turn off menu -->
   <ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
@@ -40,13 +40,13 @@
   M.M.Weber
       </ion-title>
         <ion-buttons slot="end">
-          <ion-button fill="clear" color="primary" href="https://www.instagram.com" target="_blank">
+          <ion-button fill="clear" color="primary" href="https://www.instagram.com/m.m.weber_books/" target="_blank">
             <ion-icon name="logo-instagram"></ion-icon>
           </ion-button>
-          <ion-button fill="clear" color="primary" href="https://www.facebook.com" target="_blank">
+          <ion-button fill="clear" color="primary">
             <ion-icon name="logo-facebook"></ion-icon>
           </ion-button>
-          <ion-button fill="clear" color="primary" href="https://www.tiktok.com" target="_blank">
+          <ion-button fill="clear" color="primary">
             <ion-icon name="logo-tiktok"></ion-icon>
           </ion-button>
         </ion-buttons>
@@ -89,7 +89,7 @@
           <img src="./assets/mmweber-logo-white-transparent.png" class="logo ion-text-left">
         </ion-col>
         <ion-col></ion-col>
-        <ion-col size="auto">
+        <ion-col size="auto" *ngIf="false"> <!-- temporary remove menu -->
           <div class="navbar" class="ion-text-center"> <!-- TODO: I do not think there should be 2 class attributes here-->
             <ion-button fill="clear" [routerLink]="['/tabs/tab1']" routerDirection="root" routerLinkActive="active-link" class="link">
               Home
@@ -108,13 +108,13 @@
         <ion-col></ion-col>
         <ion-col size="auto">
           <div class="navbar" class="ion-text-right">
-            <ion-button fill="clear" class="link" size="small" href="https://www.instagram.com" target="_blank">
+            <ion-button fill="clear" class="link" size="small" href="https://www.instagram.com/m.m.weber_books/" target="_blank">
               <ion-icon name="logo-instagram" aria-label="Instagram" size="small"></ion-icon>
             </ion-button>
-            <ion-button fill="clear" class="link" size="small" href="https://www.facebook.com" target="_blank">
+            <ion-button fill="clear" class="link" size="small">
               <ion-icon name="logo-facebook" aria-label="Facebook" size="small"></ion-icon>
             </ion-button>
-            <ion-button fill="clear" class="link" size="small" href="https://www.tiktok.com" target="_blank">
+            <ion-button fill="clear" class="link" size="small">
               <ion-icon name="logo-tiktok" aria-label="TikTok" size="small"></ion-icon>
             </ion-button>
           </div>
@@ -123,4 +123,3 @@
     </ion-toolbar>
   </ion-header>
 </div>
-
