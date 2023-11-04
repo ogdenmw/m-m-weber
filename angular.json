@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "m-m-weber": {
+    "app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -134,7 +134,7 @@
           "builder": "@angular-devkit/build-angular:server",
           "options": {
             "outputPath": "dist/m-m-weber/server",
-            "main": "src/main.server.ts",
+            "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "inlineStyleLanguage": "scss"
           },
@@ -155,6 +155,39 @@
               "vendorChunk": true
             },
             "ci": {}
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "m-m-weber:build:development",
+              "serverTarget": "m-m-weber:server:development"
+            },
+            "production": {
+              "browserTarget": "m-m-weber:build:production",
+              "serverTarget": "m-m-weber:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "m-m-weber:build:production",
+              "serverTarget": "m-m-weber:server:production"
+            },
+            "development": {
+              "browserTarget": "m-m-weber:build:development",
+              "serverTarget": "m-m-weber:server:development"
+            }
           },
           "defaultConfiguration": "production"
         }

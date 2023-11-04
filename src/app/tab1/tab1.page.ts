@@ -71,14 +71,17 @@ export class Tab1Page {
 
   ngOnInit() {
     let content = this.element.nativeElement;
-    this.topImage = document.getElementById('topImage');    
-    this.topMiddleImage = document.getElementById('topMiddleImage');    
-    this.topBottomImage = document.getElementById('topBottomImage');    
 
-    this.domCtrl.read(() => {
-      this.headerHeight = this.topImage.clientHeight; 
+    if (typeof document !== 'undefined') {
+      this.topImage = document.getElementById('topImage');    
+      this.topMiddleImage = document.getElementById('topMiddleImage');    
+      this.topBottomImage = document.getElementById('topBottomImage');    
+
+      this.domCtrl.read(() => {
+        this.headerHeight = this.topImage.clientHeight; 
       //console.log('headerHeight: ', this.headerHeight);
-  });
+      });
+    }
 
 
   }
