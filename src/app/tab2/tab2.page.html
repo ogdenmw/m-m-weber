@@ -13,44 +13,31 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="About page"></app-explore-container>
-
   <div class="main">
-    <ion-card class="card-center">
+    <ion-card>
         <ion-img alt="Die Physik des Todes" src="./assets/Platzhalter für Cover.png" title="Die Physik des Todes" [ngClass]="isDesktop?'card-img':''"/>
-        <ion-card-header [ngClass]="isDesktop?'ion-card-header':''">
+        <ion-card-header>
             <ion-card-title>Die Physik des Todes</ion-card-title>
             <ion-card-subtitle>Urban Fantasy</ion-card-subtitle>
-            <ion-button fill="clear">Autorenwelt</ion-button>
-            <ion-button fill="clear">Tolino</ion-button>
-            <ion-button fill="clear">Amazon</ion-button>
-            <ion-card-content class="card-content" *ngIf="isDesktop">
-              Die Tübinger Physik-Studentin Sonja will genauso erfolgreich und selbstsicher werden wie ihre Professorin Yolanda. 
+          </ion-card-header>
+          <ion-card-content>
+              <ion-button fill="clear">Autorenwelt</ion-button>
+              <ion-button fill="clear">Tolino</ion-button>
+              <ion-button fill="clear">Amazon</ion-button>
+              <br/>
+                Die Tübinger Physik-Studentin Sonja will genauso erfolgreich und selbstsicher werden wie ihre Professorin Yolanda. 
               Nach einer durchzechten Nacht in einem Verbindungshaus wacht sie als Vampir wieder auf und bemerkt schnell, dass dieser 
               Zustand nicht nur Vorteile hat. Sie setzt ihre analytische Denkweise ein, um zu verstehen, wie die Magie funktioniert, 
               von der sie nun unweigerlich ein Teil geworden ist. Dabei stellt sie fest, dass auch Yolanda mit Magie experimentiert und 
               das nicht gerade zum Vorteil der Studenten am Campus Morgenstelle. 
-            </ion-card-content>    
-            <ion-button fill="clear" *ngIf="isDesktop">zur Leseprobe</ion-button>
-            <ion-button fill="clear" *ngIf="isDesktop">Rezensionen</ion-button>
-            <ion-button fill="clear" *ngIf="isDesktop">Waschzettel</ion-button>
-            <ion-button fill="clear" *ngIf="isDesktop">Triggerwarnungen</ion-button>
-              </ion-card-header>
-        
-          <ion-card-content class="card-content" *ngIf="!isDesktop">
-            Die Tübinger Physik-Studentin Sonja will genauso erfolgreich und selbstsicher werden wie ihre Professorin Yolanda. 
-            Nach einer durchzechten Nacht in einem Verbindungshaus wacht sie als Vampir wieder auf und bemerkt schnell, dass dieser 
-            Zustand nicht nur Vorteile hat. Sie setzt ihre analytische Denkweise ein, um zu verstehen, wie die Magie funktioniert, 
-            von der sie nun unweigerlich ein Teil geworden ist. Dabei stellt sie fest, dass auch Yolanda mit Magie experimentiert und 
-            das nicht gerade zum Vorteil der Studenten am Campus Morgenstelle. 
-          </ion-card-content>    
+              <br/>
+              <ion-button fill="clear">zur Leseprobe</ion-button>
+              <ion-button fill="clear">Rezensionen</ion-button>
+              <ion-button fill="clear">Waschzettel</ion-button>
+              <ion-button fill="clear">Triggerwarnungen</ion-button>
+              </ion-card-content>    
 
-          <ion-button fill="clear" *ngIf="!isDesktop">zur Leseprobe</ion-button>
-          <ion-button fill="clear" *ngIf="!isDesktop">Rezensionen</ion-button>
-          <ion-button fill="clear" *ngIf="!isDesktop">Waschzettel</ion-button>
-          <ion-button fill="clear" *ngIf="!isDesktop">Triggerwarnungen</ion-button>
-
-          <!-- @Mike: Here needs to be a way to embed a PDF file with the first pages of the novel for people to read. 
+              <!-- @Mike: Here needs to be a way to embed a PDF file with the first pages of the novel for people to read. 
             There should be the buttons above that lead to sub-tabs with the info on them. Rezensionen should be a link 
             to somebodys blog, Triggerwarnungen should go to a place on my own website, Waschzettel should also be an embedded PDF.
             if you want to good example, check this out: https://april-wynter.de/buecher/ 

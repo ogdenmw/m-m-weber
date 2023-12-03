@@ -71,26 +71,35 @@ ion-card-subtitle {
     align-self: center;
 }
 
-.card-img {
-    width: 25%;
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
- }
+ion-card {
+    width: 500px;
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.ion-card-header { 
-    width: 72%;
-    display: inline-block;
-    margin: 10 auto;
-    vertical-align: top;
- }
-
-.card-content {
+ion-card-content {
     font-family: 'Gwen';
     font-size: 3vmin;
     letter-spacing: .25vmin;
     align-self: center;
-    padding: 0px;
+}
+
+.card-img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.ion-card-header { 
+    width: 90%;
+    display: block;
+    margin: 10 auto;
+//    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ion-button {

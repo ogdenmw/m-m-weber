@@ -13,14 +13,13 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Contact page"></app-explore-container>
-
-  <ion-card  class="card-center">
+  <ion-card>
     <ion-img alt="Michelle Margit Weber" src="./assets/Bilder von mir/Michelle_Weber_0107400 1.jpg" [ngClass]="isDesktop?'card-img':''"/>
-        <ion-card-header [ngClass]="isDesktop?'ion-card-header':''">
+        <ion-card-header>
           <ion-card-title>Das bin ich</ion-card-title>
-          <!-- <ion-card-subtitle>Eine Vampirgeschichte</ion-card-subtitle> -->
-          <ion-card-content class="card-content" *ngIf="isDesktop">
+        <!-- <ion-card-subtitle>Eine Vampirgeschichte</ion-card-subtitle> -->
+      </ion-card-header>
+      <ion-card-content>
             »Vielleicht solltest du besser was mit Naturwissenschaften machen«, bekam ich einst von einem Deutschlehrer zu hören, 
             als er mir meine zweite Klassenarbeit mit einer Fünf in Grammatik überreichte. Ich tat zunächst, wie mir empfohlen und 
             studierte Chemie-Ingenieurwesen. Schreiben war für mich lange ein Hobby, eine Zuflucht vor der Welt da draußen, die ich 
@@ -43,11 +42,6 @@
             Wenn du Fragen hast oder mir gerne etwas sagen würdest, kannst du mich unter folgender Email-Adresse erreichen. Ich freue mich auf deine Post!
             m.m.weber.books@gmail.com
           </ion-card-content>  
-        </ion-card-header>
-      
-        <ion-card-content class="card-content" *ngIf="!isDesktop">
-          Hier etwas zu mir schreiben
-        </ion-card-content>  
   </ion-card>
 
   <ion-card>
@@ -57,7 +51,7 @@
           <!-- <ion-card-subtitle>Eine Vampirgeschichte</ion-card-subtitle> -->
         </ion-card-header>
       
-        <ion-card-content class="card-content">
+        <ion-card-content>
           Kontaktformular, email-Adresse, ...
         </ion-card-content>  
   </ion-card>
