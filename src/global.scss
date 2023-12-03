@@ -77,6 +77,8 @@ ion-card {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
 ion-card-content {
@@ -105,8 +107,15 @@ ion-card-content {
 ion-button {
     font-family: 'Gwen';
     letter-spacing: .25vmin;
-    --padding-start: 0px;
+    color: white;
+    //--padding-start: 0px;
 }
+
+.link-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
 .loaderClass {
     font-family: 'Gwen';

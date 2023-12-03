@@ -1,5 +1,5 @@
 
-<ion-menu contentId="main-content" *ngIf="!isDesktop && true"> <!-- temporary turn off menu -->
+<ion-menu contentId="main-content" *ngIf="!isDesktop"> <!-- temporary turn off menu -->
   <ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
@@ -21,7 +21,7 @@
         <ion-item routerLink="/tabs/tab3" routerDirection="root">
           <ion-label class="my-ion-item">EVENTS</ion-label>
         </ion-item>
-        <ion-item routerLink="/tabs/tab3" routerDirection="root">
+        <ion-item routerLink="/tabs/tab4" routerDirection="root">
           <ion-label class="my-ion-item">CONTACT</ion-label>
         </ion-item>
       </ion-menu-toggle>
@@ -58,26 +58,6 @@
   </ion-content>
 </div>
 
-<ion-tabs *ngIf="!isDesktop">
-
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="tab1">
-      <ion-icon aria-hidden="true" [src]="mmweberlogo"></ion-icon>
-    </ion-tab-button>
-
-    <ion-tab-button tab="tab2">
-      <ion-icon aria-hidden="true" name="ellipse"></ion-icon>
-      <ion-label>About</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="tab3">
-      <ion-icon aria-hidden="true" name="square"></ion-icon>
-      <ion-label>Contact</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-
-</ion-tabs>
-
 <div *ngIf="isDesktop" class="desktop">
   <ion-router-outlet class="desktop-wrapper"></ion-router-outlet>
   <ion-header mode="ios">
@@ -89,16 +69,16 @@
         <ion-col></ion-col>
         <ion-col size="auto" *ngIf="true"> <!-- temporary remove menu -->
           <div class="navbar" class="ion-text-center"> <!-- TODO: I do not think there should be 2 class attributes here-->
-            <ion-button fill="clear" [routerLink]="['/tabs/tab1']" routerDirection="root" routerLinkActive="active-link" class="link">
+            <ion-button fill="clear" [routerLink]="['/tabs/tab1']" routerDirection="root" routerLinkActive="active-link">
               Home
             </ion-button>
-            <ion-button fill="clear" [routerLink]="['/tabs/tab2']" routerDirection="root" routerLinkActive="active-link" class="link">
+            <ion-button fill="clear" [routerLink]="['/tabs/tab2']" routerDirection="root" routerLinkActive="active-link">
               Shop
             </ion-button>
-            <ion-button fill="clear" [routerLink]="['/tabs/tab3']" routerDirection="root" routerLinkActive="active-link" class="link">
+            <ion-button fill="clear" [routerLink]="['/tabs/tab3']" routerDirection="root" routerLinkActive="active-link">
               Events
             </ion-button>
-            <ion-button fill="clear" [routerLink]="['/tabs/tab4']" routerDirection="root" routerLinkActive="active-link" class="link">
+            <ion-button fill="clear" [routerLink]="['/tabs/tab4']" routerDirection="root" routerLinkActive="active-link">
               Contact
             </ion-button>
           </div>
@@ -106,13 +86,13 @@
         <ion-col></ion-col>
         <ion-col size="auto">
           <div class="navbar" class="ion-text-right">
-            <ion-button fill="clear" class="link" size="small" href="https://www.instagram.com/m.m.weber_books/" target="_blank">
+            <ion-button fill="clear" size="small" href="https://www.instagram.com/m.m.weber_books/" target="_blank">
               <ion-icon name="logo-instagram" aria-label="Instagram" size="small"></ion-icon>
             </ion-button>
-            <ion-button fill="clear" class="link" size="small">
+            <ion-button fill="clear" size="small">
               <ion-icon name="logo-facebook" aria-label="Facebook" size="small"></ion-icon>
             </ion-button>
-            <ion-button fill="clear" class="link" size="small">
+            <ion-button fill="clear" size="small">
               <ion-icon name="logo-tiktok" aria-label="TikTok" size="small"></ion-icon>
             </ion-button>
           </div>
