@@ -75,7 +75,9 @@ export class HomePage {
     if (typeof document !== 'undefined') {
       this.topImage = document.getElementById('topImage');    
       this.topMiddleImage = document.getElementById('topMiddleImage');    
-      this.topBottomImage = document.getElementById('topBottomImage');    
+      this.topBottomImage = document.getElementById('topBottomImage');   
+      
+      //console.log(this.topImage);
 
       this.domCtrl.read(() => {
         this.headerHeight = this.topImage.clientHeight; 
