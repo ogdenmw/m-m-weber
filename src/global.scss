@@ -138,8 +138,8 @@ ion-button {
     height: 36px;
     line-height: 36px;
     text-align: center;
-    // position: fixed;
-    bottom: 0px;
+    position: relative;
+    //bottom: 0px;
     letter-spacing: .25vmin;
 }
 

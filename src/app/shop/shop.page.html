@@ -6,12 +6,22 @@
   </ion-toolbar>
 </ion-header> -->
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" [scrollEvents]="true" (ionScroll)="handleScroll($any($event))">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Shop</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <div id="topImage" class="parallax-image" [ngStyle]="{backgroundImage:'url(../../assets/bgimageTop.png)'}" alt="MMWeber background image">    
+  </div>
+
+  <div id="topMiddleImage" class="parallax-image-middle">
+    M.M.Weber
+  </div>
+
+  <div id="topBottomImage" class="parallax-image-bottom" [ngStyle]="{backgroundImage:'url(../../assets/bgimageBottom.png)'}" alt="MMWeber background image">    
+  </div>
 
   <div class="main">
     <ion-card>
@@ -45,32 +55,32 @@
             and below it in mobile mode. -->
     </ion-card>
 
-  </div>
-
-  <div class="footer">
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-button fill="clear" size="small">
-          Impressum
-        </ion-button>
-        <ion-button fill="clear" size="small">
-          Datenschutz
-        </ion-button>
-      </ion-buttons>
-      <ion-title>
-        © Michelle Weber 2023
-      </ion-title>
-      <ion-buttons slot="end">
-        <ion-button fill="clear" size="small" href="https://www.instagram.com" target="_blank">
-          <ion-icon name="logo-instagram" aria-label="Instagram" size="small"></ion-icon>
-        </ion-button>
-        <ion-button fill="clear" size="small" href="https://www.facebook.com" target="_blank">
-          <ion-icon name="logo-facebook" aria-label="Facebook" size="small"></ion-icon>
-        </ion-button>
-        <ion-button fill="clear" size="small" href="https://www.tiktok.com" target="_blank">
-          <ion-icon name="logo-tiktok" aria-label="TikTok" size="small"></ion-icon>
-        </ion-button>
-      </ion-buttons>
-    </ion-toolbar>    
+    <div class="footer">
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button fill="clear" size="small">
+            Impressum
+          </ion-button>
+          <ion-button fill="clear" size="small">
+            Datenschutz
+          </ion-button>
+        </ion-buttons>
+        <ion-title>
+          © Michelle Weber 2023
+        </ion-title>
+        <ion-buttons slot="end">
+          <ion-button fill="clear" size="small" href="https://www.instagram.com" target="_blank">
+            <ion-icon name="logo-instagram" aria-label="Instagram" size="small"></ion-icon>
+          </ion-button>
+          <ion-button fill="clear" size="small" href="https://www.facebook.com" target="_blank">
+            <ion-icon name="logo-facebook" aria-label="Facebook" size="small"></ion-icon>
+          </ion-button>
+          <ion-button fill="clear" size="small" href="https://www.tiktok.com" target="_blank">
+            <ion-icon name="logo-tiktok" aria-label="TikTok" size="small"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>    
+    </div>
+  
   </div>
   </ion-content>
