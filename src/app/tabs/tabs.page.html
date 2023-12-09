@@ -28,7 +28,8 @@
     </ion-list>
   </ion-content>
 </ion-menu>
-<div class="ion-page" id="main-content">
+
+<div class="ion-page" id="main-content" *ngIf="!isDesktop">
   <ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
