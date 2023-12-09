@@ -8,8 +8,8 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'home',
+        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
       },
       {
         path: 'tab2',
@@ -33,13 +33,13 @@ const routes: Routes = [
       },
       {
         path: '',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
       }
     ]
   },
   {
     path: '',
-    loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+    loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
   }
 ];
 
