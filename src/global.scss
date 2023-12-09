@@ -32,8 +32,10 @@
     }
 
     ion-header {
+        background: url('assets/nightsky.png') repeat;
+
         &.header-md:after {
-            background: none;
+            background: url('assets/nightsky.png') repeat;
         }
     }
 }

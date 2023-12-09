@@ -9,7 +9,8 @@
     }
 
     ion-toolbar {
-        --background: var(--ion-background-color, #000);
+        --background: url('../../assets/nightsky.png') repeat;
+        //--background: var(--ion-background-color, #000);
     }
 
     navbar {

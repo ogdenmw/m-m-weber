@@ -34,9 +34,16 @@
 
 
 .main {
-    background-color: var(--ion-background-color, #000);;
+    //background-color: var(--ion-background-color, #000);;
+    background: url('../../assets/nightsky.png') repeat;
     width: 100%;
     position: relative;
     top: -178vmin;
     z-index: 4;
+}
+
+.tile {
+    background: #1c1c1d;    
+    margin-left: 20px;
+    margin-right: 20px;
 }
