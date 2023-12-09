@@ -3,11 +3,11 @@ import { ScreensizeService } from '../services/screensize.service';
 import { LoadingController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: 'contact.page.html',
-  styleUrls: ['contact.page.scss']
+  selector: 'app-about',
+  templateUrl: 'about.page.html',
+  styleUrls: ['about.page.scss']
 })
-export class ContactPage {
+export class AboutPage {
   isDesktop: boolean = false;
 
   constructor(private screensizeService: ScreensizeService, public loadingController: LoadingController) {

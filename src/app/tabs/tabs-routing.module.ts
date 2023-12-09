@@ -20,8 +20,8 @@ const routes: Routes = [
         loadChildren: () => import('../events/events.module').then(m => m.EventsPageModule)
       },
       {
-        path: 'contact',
-        loadChildren: () => import('../contact/contact.module').then(m => m.ContactPageModule)
+        path: 'about',
+        loadChildren: () => import('../about/about.module').then(m => m.AboutPageModule)
       },
       {
         path: 'impressum',

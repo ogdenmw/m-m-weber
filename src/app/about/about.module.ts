@@ -2,10 +2,10 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ContactPage } from './contact.page';
+import { AboutPage } from './about.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { ContactPageRoutingModule } from './contact-routing.module';
+import { AboutPageRoutingModule } from './about-routing.module';
 
 @NgModule({
   imports: [
@@ -13,8 +13,8 @@ import { ContactPageRoutingModule } from './contact-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    ContactPageRoutingModule
+    AboutPageRoutingModule
   ],
-  declarations: [ContactPage]
+  declarations: [AboutPage]
 })
-export class ContactPageModule {}
+export class AboutPageModule {}
