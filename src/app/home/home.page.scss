@@ -47,3 +47,34 @@
     margin-left: 20px;
     margin-right: 20px;
 }
+
+ion-card-title {
+    font-family: 'Gwen';
+    font-size: 4vmin;
+    letter-spacing: .25vmin;
+    align-self: center;
+}
+
+ion-card-subtitle {
+    font-family: 'Gwen';
+    font-size: 3vmin;
+    letter-spacing: .25vmin;
+    align-self: center;
+}
+
+ion-card {
+    width: 500px;
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+ion-card-content {
+    font-family: 'Gwen';
+    font-size: 3vmin;
+    letter-spacing: .25vmin;
+    align-self: center;
+}
