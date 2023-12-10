@@ -100,3 +100,15 @@ ion-card-content {
 .col-bookinfo {
     width: 70%;
 }
+
+.col-right-justified {
+    margin-left: auto;
+    margin-right: auto;
+    //padding-block-end: 0px;
+    //justify-content: right;
+    //display: flexbox;
+}
+
+.row-bottom {
+    background: #1c1c1d;    
+}
