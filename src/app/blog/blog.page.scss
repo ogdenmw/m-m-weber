@@ -40,6 +40,7 @@
     position: relative;
     top: -178vmin;
     z-index: 4;
+    block-size: fit-content;
 }
 
 .tile {
@@ -101,4 +102,8 @@ ion-card-content {
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
+}
+
+.floatright {
+    float: right;
 }
