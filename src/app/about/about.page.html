@@ -7,24 +7,42 @@
 </ion-header> -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">About</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="main">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="title">
+            Hallo, ich bin Michelle
+          </div>    
+        </ion-col>
+      </ion-row>
+  <ion-row>
+    <ion-col>
 
-  <ion-card>
-    <ion-img alt="Michelle Margit Weber" src="./assets/Bilder von mir/Michelle_Weber_0107400 1.jpg" [ngClass]="isDesktop?'card-img':''"/>
-        <ion-card-header>
-          <ion-card-title>Das bin ich</ion-card-title>
-        <!-- <ion-card-subtitle>Eine Vampirgeschichte</ion-card-subtitle> -->
-      </ion-card-header>
-      <ion-card-content>
+    </ion-col>
+    <ion-col>
+      <div class="tile">
+        <ion-card>
+          <ion-img alt="Michelle Margit Weber" src="./assets/Bilder von mir/Michelle_Weber_0107400 1.jpg" title="Blog MMWeber" />
+          <ion-card-content>
+            </ion-card-content>  
+        </ion-card>      
+      </div>
+    </ion-col>
+    <ion-col>
+
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <div class="ion-card-info">
             »Vielleicht solltest du besser was mit Naturwissenschaften machen«, bekam ich einst von einem Deutschlehrer zu hören, 
             als er mir meine zweite Klassenarbeit mit einer Fünf in Grammatik überreichte. Ich tat zunächst, wie mir empfohlen und 
             studierte Chemie-Ingenieurwesen. Schreiben war für mich lange ein Hobby, eine Zuflucht vor der Welt da draußen, die ich 
             so wenig kontrollieren kann. In meinen Geschichten kontrolliere ich alles. Wie ein Gott. (Ist das nicht ein Gefühl, dass 
             wir alle von Zeit zu Zeit mal gerne haben …)
+            <br/>
+            <br/>
             2021 beschloss ich, dass es Zeit ist, meine Geschichten auch anderen Menschen zugänglich zu machen. Ich besuchte die Romanwerkstatt 
             Science-Fiction und Fantasy der Hamburger Schule des Schreibens. Das dauert etwa drei Jahre, wenn man es, wie ich, neben einem 
             stressigen Konzern-Job betreibt. Am Ende dieses Kurses stand mein erster Roman: »Die Physik des Todes«. Eine Geschichte an der Grenze von 
@@ -33,28 +51,24 @@
             Schnell stellte ich Verbindungen zwischen dem Schreiben und anderen Dingen her, die mich ebenso begeistern. Wie das Impro-Theater und NLP 
             (neurolinguistisches Programmieren). Hier eröffnen sich dem fortgeschrittenen Anwender ungeahnte Synergien, die ich in meinem Blog gerne 
             mit euch teile.
+            <br/>
+            <br/>
             Da ich wirklich gerne auf der Bühne stehe, gibt es eine gute Wahrscheinlichkeit, dass du mich auch mal live auf einer Lesung sehen kannst. 
             Ich veranstalte außerdem Schreibretreats mit Workshops in Impro-Theater und NLP-Techniken. Schau dazu auch gerne auf meiner Events-Seite vorbei.
-
+            <br/>
+            <br/>
             LG
             Michelle
-
+            <br/>
+            <br/>
             Wenn du Fragen hast oder mir gerne etwas sagen würdest, kannst du mich unter folgender Email-Adresse erreichen. Ich freue mich auf deine Post!
             m.m.weber.books@gmail.com
-          </ion-card-content>  
-  </ion-card>
+          </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 
-  <ion-card>
-    <!--    <img alt="Die Physik des Todes" src="./assets/physik des todes poster narrow.png" /> -->
-        <ion-card-header>
-          <ion-card-title>So könnt ihr mich erreichen</ion-card-title>
-          <!-- <ion-card-subtitle>Eine Vampirgeschichte</ion-card-subtitle> -->
-        </ion-card-header>
-      
-        <ion-card-content>
-          Kontaktformular, email-Adresse, ...
-        </ion-card-content>  
-  </ion-card>
+
 
 
 
@@ -84,5 +98,6 @@
       </ion-buttons>
     </ion-toolbar>    
   </div>
+</div>
 
 </ion-content>
