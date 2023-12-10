@@ -50,7 +50,7 @@
 
 ion-card-title {
     font-family: 'Gwen';
-    font-size: 4vmin;
+    font-size: 5vmin;
     letter-spacing: .25vmin;
     align-self: center;
 }
@@ -62,8 +62,22 @@ ion-card-subtitle {
     align-self: center;
 }
 
-ion-card {
-    width: 500px;
+.ion-card-bookcover {
+    width: 400px;
+    max-width: 90%;
+    min-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.ion-card-bookinfo {
+    width: 600px;
     max-width: 90%;
     display: block;
     margin-left: auto;
@@ -77,4 +91,12 @@ ion-card-content {
     font-size: 3vmin;
     letter-spacing: .25vmin;
     align-self: center;
+}
+
+.col-bookcover {
+    width: 50%;
+}
+
+.col-bookinfo {
+    width: 70%;
 }

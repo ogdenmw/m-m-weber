@@ -17,43 +17,62 @@
   </div>
 
   <div id="topMiddleImage" class="parallax-image-middle">
-    M.M.Weber
+    M.M.Weber - Shop
   </div>
 
   <div id="topBottomImage" class="parallax-image-bottom" [ngStyle]="{backgroundImage:'url(../../assets/bgimageBottom.png)'}" alt="MMWeber background image">    
   </div>
 
   <div class="main">
-    <ion-card>
-        <ion-img alt="Die Physik des Todes" src="./assets/Platzhalter für Cover.png" title="Die Physik des Todes" [ngClass]="isDesktop?'card-img':''"/>
-        <ion-card-header>
-            <ion-card-title>Die Physik des Todes</ion-card-title>
-            <ion-card-subtitle>Urban Fantasy</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-              <ion-button fill="clear">Autorenwelt</ion-button>
-              <ion-button fill="clear">Tolino</ion-button>
-              <ion-button fill="clear">Amazon</ion-button>
-              <br/>
-                Die Tübinger Physik-Studentin Sonja will genauso erfolgreich und selbstsicher werden wie ihre Professorin Yolanda. 
-              Nach einer durchzechten Nacht in einem Verbindungshaus wacht sie als Vampir wieder auf und bemerkt schnell, dass dieser 
-              Zustand nicht nur Vorteile hat. Sie setzt ihre analytische Denkweise ein, um zu verstehen, wie die Magie funktioniert, 
-              von der sie nun unweigerlich ein Teil geworden ist. Dabei stellt sie fest, dass auch Yolanda mit Magie experimentiert und 
-              das nicht gerade zum Vorteil der Studenten am Campus Morgenstelle. 
-              <br/>
-              <ion-button fill="clear">zur Leseprobe</ion-button>
-              <ion-button fill="clear">Rezensionen</ion-button>
-              <ion-button fill="clear">Waschzettel</ion-button>
-              <ion-button fill="clear">Triggerwarnungen</ion-button>
-              </ion-card-content>    
-
-              <!-- @Mike: Here needs to be a way to embed a PDF file with the first pages of the novel for people to read. 
-            There should be the buttons above that lead to sub-tabs with the info on them. Rezensionen should be a link 
-            to somebodys blog, Triggerwarnungen should go to a place on my own website, Waschzettel should also be an embedded PDF.
-            if you want to good example, check this out: https://april-wynter.de/buecher/ 
-            is it possible to have the text next to the book in computer mode, too? Her content is next to the cover in computer mode 
-            and below it in mobile mode. -->
-    </ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="col-bookcover">
+          <ion-card class="ion-card-bookcover">
+            <ion-img alt="Die Physik des Todes" src="./assets/Platzhalter für Cover.png" title="Die Physik des Todes"/>
+              <!-- <ion-card-content>
+                  </ion-card-content>    
+     -->
+                  <!-- @Mike: Here needs to be a way to embed a PDF file with the first pages of the novel for people to read. 
+                There should be the buttons above that lead to sub-tabs with the info on them. Rezensionen should be a link 
+                to somebodys blog, Triggerwarnungen should go to a place on my own website, Waschzettel should also be an embedded PDF.
+                if you want to good example, check this out: https://april-wynter.de/buecher/ 
+                is it possible to have the text next to the book in computer mode, too? Her content is next to the cover in computer mode 
+                and below it in mobile mode. -->
+        </ion-card>    
+        </ion-col>
+        <ion-col class="col-bookinfo">
+          <ion-card class="ion-card-bookinfo">
+            <ion-card-header>
+                <ion-card-title>Die Physik des Todes</ion-card-title>
+                <ion-card-subtitle>Urban Fantasy</ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+                  <ion-button fill="clear">Autorenwelt</ion-button>
+                  <ion-button fill="clear">Tolino</ion-button>
+                  <ion-button fill="clear">Amazon</ion-button>
+                  <br/>
+                    Die Tübinger Physik-Studentin Sonja will genauso erfolgreich und selbstsicher werden wie ihre Professorin Yolanda. 
+                  Nach einer durchzechten Nacht in einem Verbindungshaus wacht sie als Vampir wieder auf und bemerkt schnell, dass dieser 
+                  Zustand nicht nur Vorteile hat. Sie setzt ihre analytische Denkweise ein, um zu verstehen, wie die Magie funktioniert, 
+                  von der sie nun unweigerlich ein Teil geworden ist. Dabei stellt sie fest, dass auch Yolanda mit Magie experimentiert und 
+                  das nicht gerade zum Vorteil der Studenten am Campus Morgenstelle. 
+                  <br/>
+                  <ion-button fill="clear" class="link-centered">zur Leseprobe</ion-button>
+                  <ion-button fill="clear" class="link-centered">Rezensionen</ion-button>
+                  <ion-button fill="clear" class="link-centered">Waschzettel</ion-button>
+                  <ion-button fill="clear" class="link-centered">Triggerwarnungen</ion-button>
+                  </ion-card-content>    
+    
+                  <!-- @Mike: Here needs to be a way to embed a PDF file with the first pages of the novel for people to read. 
+                There should be the buttons above that lead to sub-tabs with the info on them. Rezensionen should be a link 
+                to somebodys blog, Triggerwarnungen should go to a place on my own website, Waschzettel should also be an embedded PDF.
+                if you want to good example, check this out: https://april-wynter.de/buecher/ 
+                is it possible to have the text next to the book in computer mode, too? Her content is next to the cover in computer mode 
+                and below it in mobile mode. -->
+        </ion-card>
+            </ion-col>
+      </ion-row>
+    </ion-grid>
 
     <div class="footer">
       <ion-toolbar>

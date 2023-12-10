@@ -24,6 +24,11 @@
 
 }
 
+ion-toolbar {
+    --background: url('../../assets/nightsky.png') repeat;
+    //--background: var(--ion-background-color, #000);
+}
+
 .header-bar{
     height: 6;
     line-height: 6;
