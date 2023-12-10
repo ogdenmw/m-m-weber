@@ -1,0 +1,104 @@
+.parallax-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vmin;
+    z-index: 1;
+    // top: -60px;
+}
+
+.parallax-image-middle {
+    height: 90vmin;
+    position: relative;
+    top: -90vmin;
+    z-index: 2;
+    font-family: 'Gwen';
+    font-weight: bold;
+    font-size: 9vmin;
+    color: #000;
+    text-align: center;
+    line-height: 70vmin;
+    letter-spacing: 3vmin;
+    color: #000;
+}
+
+.parallax-image-bottom {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vmin;
+    position: relative;
+    top: -180vmin;
+    z-index: 3;
+}
+
+
+.main {
+    //background-color: var(--ion-background-color, #000);;
+    background: url('../../assets/nightsky.png') repeat;
+    width: 100%;
+    position: relative;
+    top: -178vmin;
+    z-index: 4;
+}
+
+.tile {
+    background: #1c1c1d;    
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ion-card-title {
+    font-family: 'Gwen';
+    font-size: 4vmin;
+    letter-spacing: .25vmin;
+    align-self: left;
+}
+
+ion-card-subtitle {
+    font-family: 'Gwen';
+    font-size: 3vmin;
+    letter-spacing: .25vmin;
+    align-self: center;
+}
+
+ion-card {
+    width: 350px;
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+ion-card-content {
+    font-family: 'Gwen';
+    font-size: 3vmin;
+    letter-spacing: .25vmin;
+    align-self: center;
+}
+
+.col-right-justified {
+    margin-left: auto;
+    margin-right: auto;
+    //padding-block-end: 0px;
+    //justify-content: right;
+    //display: flexbox;
+}
+
+.row-bottom {
+    background: #1c1c1d;    
+}
+
+.title {
+    background: #1c1c1d;    
+    font-family: 'Gwen';
+    font-size: 6vmin;
+    letter-spacing: .25vmin;
+    //width: 100%;
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
