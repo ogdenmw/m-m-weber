@@ -26,9 +26,20 @@
   <div class="main">
     <ion-grid>
       <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-card-content>
+              Die Links unten sind eine Auswahl der größten Shops, über die mein Buch bestellt werden kann. Ihr könnt es aber an noch viel mehr Orten kaufen. Auch die Buchhandlung bei euch um die Ecke kann es bestellen. Wenn ihr mich als Autorin jedoch besonders unterstützen wollt, dann kauft das Buch im Autorenwelt Shop.
+              <br/><br/>
+              An einem Buch verdienen eine ganze Menge Leute etwas. Druckerei, Logistik und Buchhandel bekommen ihren Teil, bevor etwas beim Autor ankommt. Die Autorenwelt ist wie eine Online-Buchhandlung, die mir als Autorin eine größere Marge bezahlt, als alle anderen Buchhandlungen. Damit zeigt ihr besondere Wertschätzung für meine Arbeit.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
         <ion-col class="col-bookcover">
           <ion-card class="ion-card-bookcover">
-            <ion-img alt="Die Physik des Todes" src="./assets/Platzhalter für Cover.png" title="Die Physik des Todes"/>
+            <ion-img alt="Die Physik des Todes" src="./assets/physik des todes book cover epub.jpg" title="Die Physik des Todes"/>
               <!-- <ion-card-content>
                   </ion-card-content>    
      -->
@@ -47,68 +58,18 @@
                 <ion-card-subtitle>Urban Fantasy</ion-card-subtitle>
               </ion-card-header>
               <ion-card-content>
-                <!-- 
-                  orell fuessli
-                  - paperback: https://www.orellfuessli.ch/shop/home/artikeldetails/A1070829713
-                  - ebook: https://www.orellfuessli.ch/shop/home/artikeldetails/A1070779971
-
-                  kindle
-                  - ebook: 
-
-                  google books
-                  - paperback: 
-                  - ebook: 
-
-                  apple books
-                  - paperback: 
-                  - ebook: 
-
-                  thalia
-                  - paperback: 
-                  - ebook: 
-
-                  skooba
-                  - paperback: 
-                  - ebook: 
-                  
-                  weltbild
-                  - paperback: 
-                  - ebook: 
-
-                  hugendubel
-                  - paperback: 
-                  - ebook: 
-
-                  bücher.de
-                  - paperback: 
-                  - ebook: 
-
-                  ebook.de
-                  - paperback: 
-                  - ebook: 
-
-                  osiander.de
-                  - paperback: 
-                  - ebook: 
-
-                  meine buchhandlung
-                  - paperback: 
-                  - ebook: 
-                -->
-                  <ion-button fill="clear">Autorenwelt</ion-button>
-                  <ion-button fill="clear">Tolino</ion-button>
-                  <ion-button fill="clear">Amazon</ion-button>
+                  <ion-button fill="clear" href="https://shop.autorenwelt.de/products/die-physik-des-todes-von-m-m-weber?variant=47538506039621" target="_blank">Autorenwelt</ion-button>
+                  <ion-button fill="clear" href="https://www.thalia.de/shop/home/suggestartikel/A1070829713?sq=Die%20Physik%20des%20Todes&stype=productName" target="_blank">Thalia</ion-button>
+                  <ion-button fill="clear" href="https://www.weltbild.de/artikel/ebook/die-physik-des-todes_43286876-1" target="_blank">Weltbild</ion-button>
                   <br/>
-                    Die Tübinger Physik-Studentin Sonja will genauso erfolgreich und selbstsicher werden wie ihre Professorin Yolanda. 
-                  Nach einer durchzechten Nacht in einem Verbindungshaus wacht sie als Vampir wieder auf und bemerkt schnell, dass dieser 
-                  Zustand nicht nur Vorteile hat. Sie setzt ihre analytische Denkweise ein, um zu verstehen, wie die Magie funktioniert, 
-                  von der sie nun unweigerlich ein Teil geworden ist. Dabei stellt sie fest, dass auch Yolanda mit Magie experimentiert und 
-                  das nicht gerade zum Vorteil der Studenten am Campus Morgenstelle. 
+                  Am Morgen nach einer durchzechten Nacht in einem Tübinger Verbindungshaus wacht die Physikstudentin Sonja mit einer Reihe von Symptomen auf, die nur einen Schluss zulassen: Sie hat keinen einfachen Kater, sondern ist in der Nacht gestorben und zum Vampir geworden. Aber Vampire gibt es doch nicht, oder? Wie kann etwas gleichzeitig tot und lebendig sein? Wie Schrödingers Katze …
                   <br/>
-                  <ion-button fill="clear" class="link-centered">zur Leseprobe</ion-button>
-                  <ion-button fill="clear" class="link-centered">Rezensionen</ion-button>
+                  Da ihre Vampir-Mutter verschwunden ist, muss sie selbst herausfinden, wie sie ihre nächtliche Unberechenbarkeit und ihre Überempfindlichkeit gegen Sonnenlicht in den Griff bekommt. Sie setzt ihre analytische Denkweise ein, um als magisches Wesen auf dem naturwissenschaftlichen Campus nicht aufzufallen. Doch bald bemerkt sie, dass ihre Professorin Yolanda ihre Forschungsgelder auch nicht nur mit wissenschaftlichen Fakten einwirbt.
+                  <br/>
+                  <br/>
+                  <ion-button fill="clear" class="link-centered" href="../../assets/Die Physik des Todes Leseprobe.pdf" target="_blank">zur Leseprobe</ion-button>
+                  <ion-button fill="clear" class="link-centered" id="open-modal">Rezensionen</ion-button>
                   <ion-button fill="clear" class="link-centered">Waschzettel</ion-button>
-                  <ion-button fill="clear" class="link-centered">Triggerwarnungen</ion-button>
                   </ion-card-content>    
     
                   <!-- @Mike: Here needs to be a way to embed a PDF file with the first pages of the novel for people to read. 
@@ -150,4 +111,34 @@
       </ion-row>
     </ion-grid>
   </div>
+  <ion-modal trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Reviews - Die Physik des Todes</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="confirm()" [strong]="true">Close</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>fantastisches Buch!</ion-card-title>
+            <ion-card-subtitle>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+               - Mike Ogden
+            </ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Ich liebe dieses Buch. Eine neue Art von Vampirgeschichte voller Geheimnisse, Magie und Heiterkeit. Ich lache immer noch... Sonja ist fantastisch. Ich hoffe, es wird eine Fortsetzung geben!
+          </ion-card-content>
+        </ion-card>        
+      </ion-content>
+    </ng-template>
+  </ion-modal>
   </ion-content>

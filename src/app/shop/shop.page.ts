@@ -5,6 +5,9 @@ import { LoadingController } from '@ionic/angular';
 import { IonContent } from '@ionic/angular';
 import { DomController } from '@ionic/angular';
 import { ScrollDetail } from '@ionic/angular';
+import { IonModal } from '@ionic/angular';
+import { OverlayEventDetail } from '@ionic/core/components';
+
 
 
 @Component({
@@ -14,9 +17,21 @@ import { ScrollDetail } from '@ionic/angular';
 })
 
 export class ShopPage {
-  @ViewChild(IonContent, { static: false }) 
-  content: IonContent;
+  @ViewChild(IonContent, { static: false }) content: IonContent;
+  @ViewChild(IonModal) modal: IonModal;
 
+  cancel() {
+    this.modal.dismiss(null, 'cancel');
+  }
+
+  confirm() {
+    this.modal.dismiss(null, 'confirm');
+  }
+
+  onWillDismiss(event: Event) {
+    const ev = event as CustomEvent<OverlayEventDetail<string>>;
+  }
+  
   topImage: any;
   topMiddleImage: any;
   topBottomImage: any;
