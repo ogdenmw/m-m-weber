@@ -76,6 +76,9 @@ export class ShopPage {
         'webkitTransform', 'translate3d(0, ' + this.moveImageTopBottom + 'px,0) scale(' + this.scaleImageTopBottom + ')'
         )
 
+        //console.log(this.moveImageTopBottom);
+        //console.log(this.topBottomImage);
+        //console.log(scrollTop);
       });
 
 }
