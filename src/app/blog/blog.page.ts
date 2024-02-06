@@ -13,19 +13,19 @@ export class BlogPage {
   @ViewChild(IonContent, { static: false }) 
   content: IonContent;
 
-  topImage: any;
-  topMiddleImage: any;
-  topBottomImage: any;
+  topImageB: any;
+  topMiddleImageB: any;
+  topBottomImageB: any;
 
-  headerHeight: number;
-  moveImageTop: number;
-  scaleImageTop: number; 
+  headerHeightB: number;
+  moveImageTopB: number;
+  scaleImageTopB: number; 
 
-  moveImageTopMiddle: number;
-  scaleImageTopMiddle: number; 
+  moveImageTopMiddleB: number;
+  scaleImageTopMiddleB: number; 
 
-  moveImageTopBottom: number;
-  scaleImageTopBottom: number; 
+  moveImageTopBottomB: number;
+  scaleImageTopBottomB: number; 
 
   constructor(public element: ElementRef, public renderer: Renderer2, private domCtrl: DomController) {}
 
@@ -40,29 +40,29 @@ export class BlogPage {
   
         this.domCtrl.write(() => {
           if (scrollTop > 0) {
-            this.moveImageTop = scrollTop / 3;
-            this.scaleImageTop = 1;
+            this.moveImageTopB = scrollTop / 3;
+            this.scaleImageTopB = 1;
 
-            this.moveImageTopMiddle = scrollTop / 2;
-            this.scaleImageTopMiddle = 1;            
+            this.moveImageTopMiddleB = scrollTop / 2;
+            this.scaleImageTopMiddleB = 1;            
 
-            this.moveImageTopBottom = scrollTop / 5;
-            this.scaleImageTopBottom = 1;            
+            this.moveImageTopBottomB = scrollTop / 5;
+            this.scaleImageTopBottomB = 1;            
 
           } else {
   
           }
   
-          this.renderer.setStyle(this.topImage, 
-            'webkitTransform', 'translate3d(0, ' + this.moveImageTop + 'px,0) scale(' + this.scaleImageTop + ')'
+          this.renderer.setStyle(this.topImageB, 
+            'webkitTransform', 'translate3d(0, ' + this.moveImageTopB + 'px,0) scale(' + this.scaleImageTopB + ')'
             )
 
-          this.renderer.setStyle(this.topMiddleImage, 
-            'webkitTransform', 'translate3d(0, ' + this.moveImageTopMiddle + 'px,0) scale(' + this.scaleImageTopMiddle + ')'
+          this.renderer.setStyle(this.topMiddleImageB, 
+            'webkitTransform', 'translate3d(0, ' + this.moveImageTopMiddleB + 'px,0) scale(' + this.scaleImageTopMiddleB + ')'
             )
 
-          this.renderer.setStyle(this.topBottomImage, 
-            'webkitTransform', 'translate3d(0, ' + this.moveImageTopBottom + 'px,0) scale(' + this.scaleImageTopBottom + ')'
+          this.renderer.setStyle(this.topBottomImageB, 
+            'webkitTransform', 'translate3d(0, ' + this.moveImageTopBottomB + 'px,0) scale(' + this.scaleImageTopBottomB + ')'
             )
     
           });
@@ -73,14 +73,14 @@ export class BlogPage {
     let content = this.element.nativeElement;
 
     if (typeof document !== 'undefined') {
-      this.topImage = document.getElementById('topImage');    
-      this.topMiddleImage = document.getElementById('topMiddleImage');    
-      this.topBottomImage = document.getElementById('topBottomImage');   
+      this.topImageB = document.getElementById('topImageB');    
+      this.topMiddleImageB = document.getElementById('topMiddleImageB');    
+      this.topBottomImageB = document.getElementById('topBottomImageB');   
       
       //console.log(this.topImage);
 
       this.domCtrl.read(() => {
-        this.headerHeight = this.topImage.clientHeight; 
+        this.headerHeightB = this.topImageB.clientHeight; 
       //console.log('headerHeight: ', this.headerHeight);
       });
     }

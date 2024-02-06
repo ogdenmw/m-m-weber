@@ -32,19 +32,19 @@ export class ShopPage {
     const ev = event as CustomEvent<OverlayEventDetail<string>>;
   }
   
-  topImage: any;
-  topMiddleImage: any;
-  topBottomImage: any;
+  topImageS: any;
+  topMiddleImageS: any;
+  topBottomImageS: any;
 
-  headerHeight: number;
-  moveImageTop: number;
-  scaleImageTop: number; 
+  headerHeightS: number;
+  moveImageTopS: number;
+  scaleImageTopS: number; 
 
-  moveImageTopMiddle: number;
-  scaleImageTopMiddle: number; 
+  moveImageTopMiddleS: number;
+  scaleImageTopMiddleS: number; 
 
-  moveImageTopBottom: number;
-  scaleImageTopBottom: number; 
+  moveImageTopBottomS: number;
+  scaleImageTopBottomS: number; 
   
   isDesktop: boolean = false;
 
@@ -66,29 +66,29 @@ export class ShopPage {
 
     this.domCtrl.write(() => {
       if (scrollTop > 0) {
-        this.moveImageTop = scrollTop / 3;
-        this.scaleImageTop = 1;
+        this.moveImageTopS = scrollTop / 3;
+        this.scaleImageTopS = 1;
 
-        this.moveImageTopMiddle = scrollTop / 2;
-        this.scaleImageTopMiddle = 1;            
+        this.moveImageTopMiddleS = scrollTop / 2;
+        this.scaleImageTopMiddleS = 1;            
 
-        this.moveImageTopBottom = scrollTop / 5;
-        this.scaleImageTopBottom = 1;            
+        this.moveImageTopBottomS = scrollTop / 5;
+        this.scaleImageTopBottomS = 1;            
 
       } else {
 
       }
 
-      this.renderer.setStyle(this.topImage, 
-        'webkitTransform', 'translate3d(0, ' + this.moveImageTop + 'px,0) scale(' + this.scaleImageTop + ')'
+      this.renderer.setStyle(this.topImageS, 
+        'webkitTransform', 'translate3d(0, ' + this.moveImageTopS + 'px,0) scale(' + this.scaleImageTopS + ')'
         )
 
-      this.renderer.setStyle(this.topMiddleImage, 
-        'webkitTransform', 'translate3d(0, ' + this.moveImageTopMiddle + 'px,0) scale(' + this.scaleImageTopMiddle + ')'
+      this.renderer.setStyle(this.topMiddleImageS, 
+        'webkitTransform', 'translate3d(0, ' + this.moveImageTopMiddleS + 'px,0) scale(' + this.scaleImageTopMiddleS + ')'
         )
 
-      this.renderer.setStyle(this.topBottomImage, 
-        'webkitTransform', 'translate3d(0, ' + this.moveImageTopBottom + 'px,0) scale(' + this.scaleImageTopBottom + ')'
+      this.renderer.setStyle(this.topBottomImageS, 
+        'webkitTransform', 'translate3d(0, ' + this.moveImageTopBottomS + 'px,0) scale(' + this.scaleImageTopBottomS + ')'
         )
 
         //console.log(this.moveImageTopBottom);
@@ -102,14 +102,14 @@ ngOnInit() {
 let content = this.element.nativeElement;
 
 if (typeof document !== 'undefined') {
-  this.topImage = document.getElementById('topImage');    
-  this.topMiddleImage = document.getElementById('topMiddleImage');    
-  this.topBottomImage = document.getElementById('topBottomImage');   
+  this.topImageS = document.getElementById('topImageS');    
+  this.topMiddleImageS = document.getElementById('topMiddleImageS');    
+  this.topBottomImageS = document.getElementById('topBottomImageS');   
   
   //console.log(this.topImage);
 
   this.domCtrl.read(() => {
-    this.headerHeight = this.topImage.clientHeight; 
+    this.headerHeightS = this.topImageS.clientHeight; 
   //console.log('headerHeight: ', this.headerHeight);
   });
 }
