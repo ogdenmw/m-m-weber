@@ -79,7 +79,7 @@ ion-button {
     font-family: 'Gwen';
     letter-spacing: .25vmin;
     color: white;
-    //--padding-start: 0px;
+    font-size: 1rem;
 }
 
 .link-centered {
@@ -102,7 +102,7 @@ ion-button {
     color: var(--ion-text-color, #ffc409);
     font-family: 'Gwen';
     font-weight: bold;
-    font-size: small;
+    font-size: 1rem;
     background: #000;
     height: 36px;
     line-height: 36px;
@@ -116,6 +116,10 @@ ion-button {
     color: var(--ion-text-color, #ffc409);
     font-family: 'Gwen';
     font-weight: light;
-    font-size: small;
+    font-size: 1rem;
     letter-spacing: .25vmin;
+}
+
+body {
+    font-size: calc(15px + 0.390625vw);
 }

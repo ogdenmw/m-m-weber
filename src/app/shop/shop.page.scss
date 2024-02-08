@@ -50,14 +50,14 @@
 
 ion-card-title {
     font-family: 'Gwen';
-    font-size: 5vmin;
+    font-size: 1.3rem;
     letter-spacing: .25vmin;
     align-self: center;
 }
 
 ion-card-subtitle {
     font-family: 'Gwen';
-    font-size: 3vmin;
+    font-size: .9rem;
     letter-spacing: .25vmin;
     align-self: center;
 }
@@ -69,17 +69,17 @@ ion-card-subtitle {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+//    margin-top: 20px;
+//   padding-top: 20px;
+//    padding-left: 20px;
+//    padding-right: 20px;
+//    padding-bottom: 20px;
 }
 
 .ion-card-bookinfo {
-    width: 600px;
+    //width: 600px;
     max-width: 90%;
-    display: block;
+    //display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -88,13 +88,19 @@ ion-card-subtitle {
 
 ion-card-content {
     font-family: 'Gwen';
-    font-size: 3vmin;
+    font-size: 1rem;
     letter-spacing: .25vmin;
     align-self: center;
 }
 
 .col-bookcover {
     width: 50%;
+}
+
+.row-book {
+    background: #2a2a2b;
+    padding: 5px;
+    margin: 10px;
 }
 
 .col-bookinfo {
