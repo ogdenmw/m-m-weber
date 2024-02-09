@@ -13,6 +13,26 @@ const routes: Routes = [
   {
     path: 'datenschutz',
     loadChildren: () => import('./datenschutz/datenschutz.module').then( m => m.DatenschutzPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+  },
+  {
+    path: 'shop',
+    loadChildren: () => import('./shop/shop.module').then(m => m.ShopPageModule)
+  },
+  {
+    path: 'events',
+    loadChildren: () => import('./events/events.module').then(m => m.EventsPageModule)
+  },
+  {
+    path: 'blog',
+    loadChildren: () => import('./blog/blog.module').then(m => m.BlogPageModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then(m => m.AboutPageModule)
   }
 ];
 @NgModule({
