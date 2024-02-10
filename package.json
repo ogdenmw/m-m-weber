@@ -1,5 +1,5 @@
 {
-  "name": "m-m-weber",
+  "name": "app",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -10,10 +10,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "dev:ssr": "ng run m-m-weber:serve-ssr",
-    "serve:ssr": "node dist/m-m-weber/server/main.js",
-    "build:ssr": "ng build && ng run m-m-weber:server",
-    "prerender": "ng run m-m-weber:prerender"
+    "dev:ssr": "ng run app:serve-ssr",
+    "serve:ssr": "node dist/app/server/main.js",
+    "build:ssr": "ng build && ng run app:server",
+    "prerender": "ng run app:prerender"
   },
   "private": true,
   "dependencies": {

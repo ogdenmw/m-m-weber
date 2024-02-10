@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/m-m-weber/browser",
+            "outputPath": "dist/app/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -133,7 +133,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/m-m-weber/server",
+            "outputPath": "dist/app/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "inlineStyleLanguage": "scss"
@@ -162,12 +162,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "m-m-weber:build:development",
-              "serverTarget": "m-m-weber:server:development"
+              "browserTarget": "app:build:development",
+              "serverTarget": "app:server:development"
             },
             "production": {
-              "browserTarget": "m-m-weber:build:production",
-              "serverTarget": "m-m-weber:server:production"
+              "browserTarget": "app:build:production",
+              "serverTarget": "app:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -181,12 +181,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "m-m-weber:build:production",
-              "serverTarget": "m-m-weber:server:production"
+              "browserTarget": "app:build:production",
+              "serverTarget": "app:server:production"
             },
             "development": {
-              "browserTarget": "m-m-weber:build:development",
-              "serverTarget": "m-m-weber:server:development"
+              "browserTarget": "app:build:development",
+              "serverTarget": "app:server:development"
             }
           },
           "defaultConfiguration": "production"
